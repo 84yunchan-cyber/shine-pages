@@ -1,0 +1,75 @@
+<!doctype html><html lang=ko><title>Shine AI 개인정보처리방침</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{color-scheme:light dark}
+body{max-width:720px;margin:0 auto;padding:44px 22px 80px;
+  font:16px/1.75 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+  color:#1c2530;background:#fff}
+@media(prefers-color-scheme:dark){body{color:#e3e9f0;background:#11161c}
+  h1,h2{color:#e8eef5} .m{color:#8fa0b3} code{background:#1b232c}
+  table,th,td{border-color:#2a3540}}
+h1{font-size:24px;margin:0 0 6px;letter-spacing:-.01em}
+h2{font-size:16px;margin:34px 0 8px;padding-top:14px;border-top:1px solid #e6ebf1}
+p,li{margin:8px 0}
+.m{color:#66788c;font-size:13.5px}
+code{background:#f2f5f8;padding:1px 5px;border-radius:4px;font-size:13.5px}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-size:14.5px}
+th,td{border:1px solid #e6ebf1;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:rgba(127,127,127,.07);font-weight:600;white-space:nowrap}
+a{color:#2f6fd0}
+.box{border-left:3px solid #2f6fd0;padding:2px 0 2px 14px;margin:14px 0}
+</style>
+
+<h1>개인정보처리방침</h1>
+<p class="m">Shine AI · 최종 수정 2026-09-10</p>
+
+<div class="box">
+<p>Shine AI는 <b>만든 사람 한 명만 쓰는 개인용 도구</b>입니다. 다른 사용자를 받지 않고,
+가입·판매·광고가 없습니다. 아래는 <b>그 한 사람의 구글 계정 데이터를 어떻게 다루는지</b>에 대한 설명입니다.</p>
+</div>
+
+<h2>1. 무엇을 읽나</h2>
+<table>
+<tr><th>범위</th><th>읽는 것</th><th>쓰는 것</th></tr>
+<tr><td><code>calendar.readonly</code><br><code>calendar.events</code></td>
+    <td>일정의 제목·시각·장소</td><td>본인이 요청했을 때만 일정 등록·시간 이동</td></tr>
+<tr><td><code>gmail.readonly</code></td>
+    <td>안 읽은 메일의 <b>보낸이·제목·미리보기</b></td><td>없음 — <b>메일을 보내지 않습니다</b></td></tr>
+<tr><td><code>drive.metadata.readonly</code></td>
+    <td>파일의 <b>제목·수정시각·링크</b></td><td>없음</td></tr>
+</table>
+<p><b>메일 본문과 문서 본문은 저장하지 않습니다.</b> 드라이브는 파일 목록만 보고 내용은 열지 않습니다.</p>
+
+<h2>2. 어디에 두나</h2>
+<p>본인 소유의 맥 안에서 도는 PostgreSQL 데이터베이스에만 저장합니다.
+<b>외부 서버에 올리지 않고, 백업도 본인의 구글드라이브에만</b> 둡니다.
+접속 자격증명은 맥 키체인에 있습니다.</p>
+
+<h2>3. 밖으로 나가는 것</h2>
+<p>브리핑 같은 글을 만들 때 <b>Anthropic의 Claude 모델</b>에 다음을 보냅니다:</p>
+<ul>
+<li>일정 <b>제목과 시각</b> · 메일의 <b>보낸이와 제목</b> · 열려 있는 건의 제목</li>
+<li><b>메일 본문·문서 본문·첨부는 보내지 않습니다.</b></li>
+</ul>
+<p>완성된 브리핑은 <b>본인의 텔레그램</b>으로 갑니다. 그 외 제3자에게 제공·판매·공유하지 않습니다.
+광고·분석·추적 도구를 쓰지 않습니다.</p>
+
+<h2>4. 얼마나 두나</h2>
+<ul>
+<li>주고받은 말: <b>180일</b> 뒤 삭제 대상</li>
+<li>일정·메일 메타데이터: 해당 건이 닫힐 때까지</li>
+<li>실행 기록: 통계 목적으로 보관</li>
+</ul>
+
+<h2>5. 연결을 끊으려면</h2>
+<p><a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>에서
+<b>Shine AI</b>의 접근 권한을 삭제하면 즉시 중단됩니다.
+로컬 데이터베이스를 지우면 저장된 내용도 함께 사라집니다.</p>
+
+<h2>6. 구글 API 제한 사용 정책</h2>
+<p>이 앱이 구글 API로 받은 정보의 사용과 다른 앱으로의 전송은
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>를
+따르며, 여기에는 <b>제한적 사용(Limited Use)</b> 요건이 포함됩니다.</p>
+
+<h2>7. 연락</h2>
+<p class="m">84.yunchan@gmail.com</p>
+</html>
